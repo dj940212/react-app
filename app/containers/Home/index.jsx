@@ -1,6 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import HomeHeader from '../../components/HomeHeader'
+import Category from '../../components/Category'
 
 class Home extends React.Component {
     constructor(props, context) {
@@ -16,7 +17,8 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-            <HomeHeader cityName={this.state.city}></HomeHeader>
+                <HomeHeader cityName={this.state.city}></HomeHeader>
+                <Category></Category>
             </div>
         )
     }
