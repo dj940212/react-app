@@ -1,3 +1,4 @@
-# react-simple-o2o-demo
-
-代码尚在开发中
+## 项目启动
++ `npm install`
++ `npm run dev`
++ `npm run mock`

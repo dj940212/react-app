@@ -6,10 +6,13 @@ class Search extends React.Component {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
+    alert(){
+        alert(1)
+    }
     render() {
         return (
             <div>
-                <h1>Search</h1>
+                <h1 onClick="alert">Search</h1>
             </div>
         )
     }
