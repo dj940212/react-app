@@ -3,13 +3,14 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 import HomeHeader from '../../components/HomeHeader'
 import Category from '../../components/Category'
 import Ad from './subpage/Ad'
+import List from './subpage/List'
 
 class Home extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
         this.state={
-            city:"杭州"
+            cityName:"杭州"
         }
     }
     render() {
@@ -18,6 +19,7 @@ class Home extends React.Component {
                 <HomeHeader cityName={this.state.city}></HomeHeader>
                 <Category></Category>
                 <Ad></Ad>
+                <List cityName={this.state.cityName}></List>
             </div>
         )
     }
