@@ -1,5 +1,6 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import Header from '../../components/Header'
 
 class City extends React.Component {
     constructor(props, context) {
@@ -9,7 +10,7 @@ class City extends React.Component {
     render() {
         return (
             <div>
-                <h1>city</h1>
+                <Header title="选择城市"></Header>
             </div>
         )
     }

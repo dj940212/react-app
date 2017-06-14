@@ -3,14 +3,14 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 import './style.less'
 
-class Header extends React.Component{
+class Header extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
-    render(){
-        return(
-            <div id="commom-header">
+    render() {
+        return (
+            <div id="common-header">
                 <span className="back-icon" onClick={this.clickHandle.bind(this)}>
                     <i className="icon-chevron-left"></i>
                 </span>
@@ -18,8 +18,7 @@ class Header extends React.Component{
             </div>
         )
     }
-    clickHandle(){
-        //返回
+    clickHandle() {
         window.history.back()
     }
 }
