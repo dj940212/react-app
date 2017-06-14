@@ -16,8 +16,9 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <HomeHeader cityName={this.state.city}></HomeHeader>
+                <HomeHeader cityName={this.state.cityName}></HomeHeader>
                 <Category></Category>
+                <div style={{height: '15px'}}>{/* 分割线 */}</div>
                 <Ad></Ad>
                 <List cityName={this.state.cityName}></List>
             </div>
