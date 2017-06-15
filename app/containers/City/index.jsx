@@ -36,7 +36,7 @@ class City extends React.Component {
         userinfo.cityName = newCity
         this.props.userInfoActions.update(userinfo)
 
-        //修改cookie
+        //修改本地存储
         localStore.setItem(CITYNAME,newCity)
 
         //跳转页面
