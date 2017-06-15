@@ -1,8 +1,16 @@
 import * as actionTypes from '../constants/userinfo'
 
-export function login(data) {
+// export function login(data) {
+//     return {
+//         type: actionTypes.USERINFO_LOGIN,
+//         data
+//     }
+// }
+
+export function update(data) {
+    console.log("actionTypes.USERINFO_UPDATE")
     return {
-        type: actionTypes.USERINFO_LOGIN,
+        type: actionTypes.USERINFO_UPDATE,
         data
     }
 }
