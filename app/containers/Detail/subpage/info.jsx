@@ -2,7 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 import { getInfoData } from '../../../fetch/detail/detail'
-import DetailInfo from '../../../components/DetailInfo'
+import DetailInfo from '../../../components/detailInfo'
 
 class Info extends React.Component{
     constructor(props, context) {
