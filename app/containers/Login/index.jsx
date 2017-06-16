@@ -48,6 +48,7 @@ class Login extends React.Component {
     }
     // 处理登录之后的事情
     loginHandle(username) {
+        console.log("username",username)
         // 保存用户名
         const actions = this.props.userInfoActions
         let userinfo = this.props.userinfo
@@ -56,6 +57,7 @@ class Login extends React.Component {
 
         const params = this.props.params
         const router = params.router
+        console.log("router",params.router)
         if (router) {
             // 跳转到指定的页面
             hashHistory.push(router)
