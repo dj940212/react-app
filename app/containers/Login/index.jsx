@@ -56,6 +56,7 @@ class Login extends React.Component {
         actions.update(userinfo)
 
         const params = this.props.params
+        console.log("params",params)
         const router = params.router
         console.log("router",params.router)
         if (router) {

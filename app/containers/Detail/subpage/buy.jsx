@@ -30,6 +30,8 @@ class Buy extends React.Component {
         const id = this.props.id
         const store = this.props.store
 
+        console.log("store",store)
+
         // some 即任何一个满足即可
         store.some(item => {
             if (item.id === id) {
